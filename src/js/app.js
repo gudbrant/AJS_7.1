@@ -9,11 +9,6 @@ export default class Validator {
     const val3 = /^[^\d-\_]/.test(this.username);
     const val4 = /[^\d-\_]$/.test(this.username);
 
-    // console.log(val1);
-    // console.log(val2);
-    // console.log(val3);
-    // console.log(val4);
-
     return ((val1 === val3 === val4 === true) && (val2 === false));
   }
 }
